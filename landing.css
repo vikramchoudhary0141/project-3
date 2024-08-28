@@ -1,0 +1,169 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #004680;
+    color: #fff;
+}
+
+.header-top {
+    padding: 10px 0;
+    background: #003366;
+}
+
+.header-top .logo h1 {
+    float: left;
+    margin: 0;
+    font-size: 30px;
+}
+
+.header-top .logo h1 span {
+    color: #f39c12;
+}
+
+.header-top .contact-info {
+    float: right;
+}
+
+nav {
+    padding: 10px 0;
+    background: #00254d;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://i.pinimg.com/564x/e3/74/5c/e3745c1c5a17f0a498641785b95b8559.jpg');
+    height: 400px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    padding-top: 120px;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    padding: 20px 0;
+    background: #f4f4f4;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-form input, .search-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+
+.search-form button {
+    background: #004680;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background: #003366;
+}
+
+/* Offers and Top Places Styles */
+.special-offers, .top-places {
+    padding: 20px 0;
+}
+
+.offers, .places {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offer-item, .place-item {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 30%;
+    text-align: center;
+   
+}
+
+.offer-item img, .place-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e67e22;
+}
+
+/* Footer Styles */
+footer {
+    background: #00254d;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-form {
+        flex-direction: column;
+    }
+
+    .offers, .places {
+        flex-direction: column;
+    }
+
+    .offer-item, .place-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
